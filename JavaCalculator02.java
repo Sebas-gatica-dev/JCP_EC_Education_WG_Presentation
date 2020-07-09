@@ -35,4 +35,4 @@ public class JavaCalculator02 {
 }
 
 // Single Source File Code example
-// runs with java --source 14 --enable-preview JavaCalculator02.java
+// runs with java JavaCalculator02.java
