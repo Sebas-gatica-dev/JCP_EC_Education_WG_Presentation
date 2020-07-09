@@ -8,3 +8,6 @@ The JavaCalculator01, 02, & 03 are executable Java code that can be run using th
 The PythonCalculator01, 02, & 03 are equivalent programs to the Java examples that can be run on the command line.
 
 The purpose of these examples is to demonstrate that the perceived brevity of Python and that the simplicity of executing Python code is a myth.
+
+There are two PowerPoint presentations in the repo. One has notes for the speaker and the other does not. You may distribute either version to whomever you are presenting this to.
+
