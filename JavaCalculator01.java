@@ -21,4 +21,4 @@ public class JavaCalculator01 {
 }
 
 // Single Source File Code example
-// runs with java --source 14 --enable-preview JavaCalculator01.java
+// runs with java JavaCalculator01.java
