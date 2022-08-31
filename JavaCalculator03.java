@@ -1,13 +1,13 @@
-/**
- * Use Java 17 or greater
- * @author omniprof
- */
 import java.util.Scanner;
-
+/**
+ * OOP Version
+ * 
+ * Use Java 17 or greater
+ */
 public class JavaCalculator03 {
 
     private LoanRecord inputData() {
-        Scanner sc = new Scanner(System.in);
+        var sc = new Scanner(System.in);
         System.out.print("           Loan: ");
         var loan = sc.nextDouble();
         System.out.print("       Interest: ");
@@ -34,10 +34,11 @@ public class JavaCalculator03 {
     }
 
     public static void main(String[] args) {
-        var calc = new JavaCalculator03();
-        calc.perform();
+        new JavaCalculator03().perform();
     }
 }
 
 record LoanRecord(double loan, double interest, double term) {}
 
+// Single Source File Code example
+// runs with java JavaCalculator03.java

@@ -1,6 +1,8 @@
-
 import java.util.Scanner;
 
+/**
+ * Structured Version
+ */
 public class JavaCalculator02 {
 
     static double loan;
@@ -9,7 +11,7 @@ public class JavaCalculator02 {
     static double result;
 
     private static void inputData() {
-        Scanner sc = new Scanner(System.in);
+        var sc = new Scanner(System.in);
         System.out.print("           Loan: ");
         loan = sc.nextDouble();
         System.out.print("       Interest: ");
@@ -19,12 +21,12 @@ public class JavaCalculator02 {
     }
 
     private static void processData() {
-        double tempInterest = interest / 12.0;
+        var tempInterest = interest / 12.0;
         result = loan * (tempInterest / (1.0 - Math.pow((1.0 + tempInterest), -term)));
     }
 
     private static void outputResult() {
-        System.out.println("Monthly Payment: " + String.format("%.2f", result));
+        System.out.printf("Monthly Payment: %.2f%n", result);
     }
 
     public static void main(String[] args) {
