@@ -8,11 +8,11 @@ public class JavaCalculator03 {
 
     private LoanRecord inputData() {
         var sc = new Scanner(System.in);
-        System.out.print("           Loan: ");
+        System.out.printf("           Loan: ");
         var loan = sc.nextDouble();
-        System.out.print("       Interest: ");
+        System.out.printf("       Interest: ");
         var interest = sc.nextDouble();
-        System.out.print("           Term: ");
+        System.out.printf("           Term: ");
         var term = sc.nextDouble();
         return new LoanRecord(loan, interest, term);
     }

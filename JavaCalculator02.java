@@ -12,11 +12,11 @@ public class JavaCalculator02 {
 
     private static void inputData() {
         var sc = new Scanner(System.in);
-        System.out.print("           Loan: ");
+        System.out.printf("           Loan: ");
         loan = sc.nextDouble();
-        System.out.print("       Interest: ");
+        System.out.printf("       Interest: ");
         interest = sc.nextDouble();
-        System.out.print("           Term: ");
+        System.out.printf("           Term: ");
         term = sc.nextDouble();
     }
 
