@@ -1,3 +1,7 @@
+/**
+ * Use Java 17 or greater
+ * @author omniprof
+ */
 import java.util.Scanner;
 
 public class JavaCalculator03 {
@@ -5,22 +9,22 @@ public class JavaCalculator03 {
     private LoanRecord inputData() {
         Scanner sc = new Scanner(System.in);
         System.out.print("           Loan: ");
-        double loan = sc.nextDouble();
+        var loan = sc.nextDouble();
         System.out.print("       Interest: ");
-        double interest = sc.nextDouble();
+        var interest = sc.nextDouble();
         System.out.print("           Term: ");
-        double term = sc.nextDouble();
+        var term = sc.nextDouble();
         return new LoanRecord(loan, interest, term);
     }
 
     private double processData(LoanRecord loan) {
-        double tempInterest = loan.interest() / 12.0;
-        double result = loan.loan() * (tempInterest / (1.0 - Math.pow((1.0 + tempInterest), -loan.term())));
+        var tempInterest = loan.interest() / 12.0;
+        var result = loan.loan() * (tempInterest / (1.0 - Math.pow((1.0 + tempInterest), -loan.term())));
         return result;
     }
 
     private void outputResult(double result) {
-        System.out.println("Monthly Payment: " + String.format("%.2f", result));
+        System.out.printf("Monthly Payment: %.2f%n", result);
     }
 
     public void perform() {
@@ -30,13 +34,10 @@ public class JavaCalculator03 {
     }
 
     public static void main(String[] args) {
-        JavaCalculator03 calc = new JavaCalculator03();
+        var calc = new JavaCalculator03();
         calc.perform();
     }
 }
 
 record LoanRecord(double loan, double interest, double term) {}
 
-
-// Single Source File Code example
-// runs with java --source 14 --enable-preview JavaCalculator03.java
